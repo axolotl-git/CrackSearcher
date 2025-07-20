@@ -59,14 +59,14 @@ def print_links(links, count):
 
 def main():
     """Main procedure to run the program."""
-    panel = Panel.fit((Text("Scrivi cosa vuoi cercare", style="bold green")))
+    panel = Panel.fit((Text("type what you want to search", style="bold green")))
     print(panel)
     query = input(": ")
-    panel = Panel.fit(Text("quanti link vuoi?", style="bold green"))
+    panel = Panel.fit(Text("how many links you want to see?", style="bold green"))
     print(panel)
     count = int(Prompt.ask(default="5"))
     print("\n")
-    for i in track(range(3), description="Sto prendendo i link..."):
+    for i in track(range(3), description="I am grabbing the links..."):
         fit_html, steamrip_html, gamebounty_html = fetch_html_content(query)
     if fit_html and steamrip_html and gamebounty_html:
         fitgirl_links = extract_links(fit_html, "https://fitgirl-repacks.site/")
@@ -81,7 +81,7 @@ def main():
         print_links(gamebounty_links, count)
     else:
         print("Failed to fetch URLs content.")
-    input("premi invio per chiudere il programma\n")
+    input("press enter to exit")
 
 if __name__ == "__main__":
     main()
