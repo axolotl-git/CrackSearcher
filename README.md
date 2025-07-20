@@ -7,7 +7,7 @@ extract the zip somewhere on your computer
 
 Download python from this link: https://www.python.org/downloads/release/python-3135/ or go to https://www.python.org/downloads/
 
-when you finish to install python open a terminal (CMD) and check if its installed correctly with the command ```python -V```
+when you finish to install python open a terminal (CMD) and check if its installed correctly with the command ```python -V``` (the output should be something like python 13)
 
 then do ```pip install rich```
 when it finish to install just double click `CrackSearcher.py` or open with python
