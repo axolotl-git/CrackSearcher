@@ -8,11 +8,12 @@ here you can feed to it as many sites you want but they need to follow that stru
 `https://example.com/?s=;.css.class;https://example.com/`
 
 explaination of the structure:
-https://example.com/?s= is the website link, ?s= mean that the purpose of the URL is to search something
-.css.class is the class that contain all the URLs you want to obtain
-https://example.com is the baseURL you can not include this because its not really needed for 90% of the times but some sites you may want to use it!
 
-pay attention! all the sites are different.
+https://example.com/?s= is the website link, ?s= mean that the purpose of the URL is to search something
+
+.css.class is the class that contain all the URLs you want to obtain
+
+https://example.com is the baseURL you can not include this because its not really needed for 90% of the times but in some sites you may want to use it!
 
 for example if i want to obtain the results from youtube.com it will be:
 https://www.youtube.com/results?search_query=;.style-scope.ytd-video-renderer;https://www.youtube.com
