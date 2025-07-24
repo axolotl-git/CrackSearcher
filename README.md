@@ -1,16 +1,26 @@
-# CrackSearcher
-a simple crack searcher in python, for learning purpose only!!!
+# LinkScrapper
+a simple Link Scrapper in Go lang
 
 # how to use
-download from this link the code: https://github.com/axolotl-git/CrackSearcher/archive/refs/heads/main.zip
-extract the zip somewhere on your computer
+create a file named "list.txt" in the same folder where you put the executable 
 
-Download python from this link: https://www.python.org/downloads/release/python-3135/ or go to https://www.python.org/downloads/
+here you can feed to it as many sites you want but they need to follow that structure:
+`https://example.com/?s=;.css.class;https://example.com/`
 
-when you finish to install python open a terminal (CMD) and check if its installed correctly with the command ```python -V``` (the output should be something like python 13)
+explaination of the structure:
+https://example.com/?s= is the website link, ?s= mean that the purpose of the URL is to search something
+.css.class is the class that contain all the URLs you want to obtain
+https://example.com is the baseURL you can not include this because its not really needed for 90% of the times but some sites you may want to use it!
 
-then do ```pip install rich```
-when it finish to install just double click `CrackSearcher.py` or open with python
+pay attention! all the sites are different.
 
-https://github.com/user-attachments/assets/73ee30cc-9ce1-4787-a639-f362aaa37fdb
-
+for example if i want to obtain the results from youtube.com it will be:
+https://www.youtube.com/results?search_query=;.style-scope.ytd-video-renderer;https://www.youtube.com
+since the search link look like this https://www.youtube.com/results?search_query=hello and the CSS this:
+```
+<div id="dismissible" class="style-scope ytd-video-renderer">
+  <a id="thumbnail" href="/watch?v=MxU_HKk3H8k">
+  </a>
+</div>
+```
+(the html above is modified to be more clear)
