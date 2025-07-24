@@ -1,4 +1,4 @@
-# LinkScrapper
+# GoHarvester
 a simple Link Scrapper in Go lang
 
 # how to use
